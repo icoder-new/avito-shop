@@ -1,0 +1,38 @@
+app:
+  name: "avito-shop"
+  version: "1.0.0"
+  mode: "development"
+  port: 8080
+
+server:
+  read_timeout: 10s
+  write_timeout: 10s
+  shutdown_timeout: 5s
+
+db:
+  max_open_conns: 25
+  max_idle_conns: 25
+  conn_max_lifetime: 5m
+
+logger:
+  level: "debug"
+  time_format: ""
+  log_file: "./logs/"
+
+cors:
+  allowed_origins:
+    - "*"
+  allowed_methods:
+    - "GET"
+    - "POST"
+    - "PUT"
+    - "DELETE"
+    - "OPTIONS"
+  allowed_headers:
+    - "Content-Type"
+    - "Authorization"
+  allow_credentials: true
+  max_age: 300
+
+service:
+  initial_coins: 1000
