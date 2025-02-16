@@ -52,7 +52,7 @@ cp .env.example .env
 
 3. Запустить сервис
 ```bash
-docker compose up -d
+docker compose up --build -d
 ```
 
 ## Тестирование
